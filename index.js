@@ -10,7 +10,12 @@ function setCart(c) {
 }
 
 function addToCart(itemNames) {
-  items = []
+  items = {itemName: names, generateRandomNumber()}
+
+
+
+  function generateRandomNumber() {
+  return Math.floor(Math.random() * 100) + 1;
  // write your code here
 }
 
