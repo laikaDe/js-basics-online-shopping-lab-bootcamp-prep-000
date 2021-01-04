@@ -9,14 +9,14 @@ function setCart(c) {
   return cart;
 }
 
-function addToCart(itemNames) {
+function addToCart(item) {
   var price = Math.floor(Math.random() * 100)+1
-  var items = {}
-  items[itemNames] = price
+  var items = {
+    itemName: item,
+    itemPrice: price
+    }
   cart.push(items)
-  console.log(itemNames + "has been added to your cart")
-  return cart
-
+  return `${cart[cart.length -1].itemNam} has been added to your cart.`
  // write your code here
 }
 
