@@ -38,6 +38,11 @@ function viewCart() {
 
 
 function total() {
+  for(i=0; i < cart.length; i++){
+    total = 0
+    total = total + cart.itemPrice[i]
+  }
+  return total
   // write your code here
 }
 
