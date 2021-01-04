@@ -14,7 +14,7 @@ function addToCart(itemNames) {
   var items = {}
   items[itemNames] = price
   cart.push(items)
-  console.log(item + "has been added to your cart")
+  console.log(itemNames + "has been added to your cart")
   return cart
 
  // write your code here
