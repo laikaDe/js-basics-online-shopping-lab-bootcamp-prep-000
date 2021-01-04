@@ -46,13 +46,13 @@ function total(){
 }
 
 function removeFromCart(item) {
-  const itemName = []
+  var itemName = []
 
   for(var i = 0; i < cart.length; i++){
     itemName.push(cart[i].itemName)
     }
 
-  const index = itemName.indexOf(item)
+  var index = itemName.indexOf(item)
 
   if(index > -1){
      cart.splice(index, 1)
@@ -67,7 +67,7 @@ function placeOrder(cardNumber) {
     return "Sorry, we don't have a credit card on file for you."
   } else {
     const total1 = total()
-    cart.length = 0 
+    cart.length = 0
     return `Your total cost is $${total1}, which will be charged to the card ${cardNumber}.`
   }
 }
