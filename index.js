@@ -9,7 +9,8 @@ function setCart(c) {
   return cart;
 }
 
-function addToCart(item) {
+function addToCart(itemNames) {
+  items = []
  // write your code here
 }
 
