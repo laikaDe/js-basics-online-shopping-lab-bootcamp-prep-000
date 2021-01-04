@@ -30,9 +30,7 @@ function viewCart() {
     var last = `${cart[cart.length - 1].itemName} at $${cart[cart.length - 1].itemPrice}.`
 
     for(var i = 0; i < cart.length - 1; i++){
-       cartItems.push(
-         `${cart[i].itemName} at $${cart[i].itemPrice}`
-       )
+       cartItems.push(`${cart[i].itemName} at $${cart[i].itemPrice}`)
     }
     return `In your cart, you have ${cartItems.join(', ')}, and ${last}`
   }
