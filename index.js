@@ -16,7 +16,7 @@ function addToCart(item) {
     itemPrice: random
     }
   cart.push(items)
-  return `${cart[cart.length -1].itemNam} has been added to your cart.`
+  return `${cart[cart.length -1].itemName} has been added to your cart.`
  // write your code here
 }
 
